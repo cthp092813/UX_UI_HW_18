@@ -1,0 +1,197 @@
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'DM sans', sans-serif;
+    font-size: 20px;
+}
+
+/*Navigation*/
+
+.navigation{
+    display: flex;
+    width: 93%;
+    height: 113px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.logo{
+    font-weight: 700px;
+    flex: 1 0 0; 
+}
+
+ul{
+    font-family: 'DM sans', sans-serif;
+    display: flex;
+    width: 212px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 37px;
+    flex-shrink: 0;    
+}
+
+li{
+    display: flex;
+    width: 60px;
+    height: 33px;
+    padding: 0px 0px 7px 12px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+li a{
+    color:black;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+/*Hero Section*/
+
+.heroImg{
+    background-image: url("../images/Flower\ Hero\ Bkgd\ Img.png");
+    width: 100%;
+    height: 644px;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    'herocontent LinkedIn';
+    justify-items: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 842px;
+    height: 230px;
+    line-height: 25px;
+}
+
+#herocontent{
+    grid-area:"herocontent";
+}
+#LinkedIn{
+    width: 40px;
+    height: 40px;
+    grid-area:"LinkedIn";
+}
+
+#myname{
+    font-size: 75px;
+}
+
+/*Projects Section*/
+#projects{
+    background: black;
+    width: 100%;
+    height: 1138px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 436px 436px;
+    grid-template-areas:
+    "ppc fcc"
+    "ff ff";
+    justify-items: center;
+
+}
+
+#ppc{
+    grid-area: "ppc";
+    background-image: url("../images/PPC\ Display\ Mockups.png");
+    background-color: #606C38;
+    width: 569px;
+    height: 436px;
+    margin-left: 170px;
+    transition: background-image 0.5s ease;
+}
+
+#ppc:hover{
+    background-image: url("../images/PPC\ case\ study\ hover.png");
+}
+
+#fcc{
+    grid-area: "fcc";
+    background-image: url("../images/FCC\ Display\ mockups.png");
+    background-color: #778DA9;
+    width: 569px;
+    height: 436px;
+    margin-right: 170px;
+    transition: background-image 0.5s ease;
+}
+
+#fcc:hover{
+    background-image: url("../images/FCC\ case\ study\ hover.png");
+}
+
+#ff{
+    grid-area: "ff";
+    background-image: url("../images/FF\ section.png");
+    width: 1169px;
+    height: 469px;
+    margin-left: 770px;
+    margin-top: 140px;
+    transition: background-image 0.5s ease;
+}
+
+#ff:hover{
+    background-image: url("../images/FF\ case\ study\ hover.png");
+}
+
+.projectcontent{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 105px;
+    cursor: pointer;
+    display: grid;
+    align-items: end;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: 250px;  
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    align-self: stretch;
+}
+
+.inline-block2{
+    display: inline-block;
+}
+
+.inline-block2 li:hover{
+    text-decoration: underline;
+}
+
+.inline{
+    display: flex;
+    align-items: flex-start;
+    gap: 897px;
+    padding: 0px 75px;
+    align-self: stretch;
+}
