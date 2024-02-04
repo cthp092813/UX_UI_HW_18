@@ -29,7 +29,12 @@ p{
     flex: 1 0 0; 
 }
 
-ul{
+.logo a{
+    color:black;
+    text-decoration: none;
+}
+
+.navlinks{
     font-family: 'DM sans', sans-serif;
     display: flex;
     width: 212px;
@@ -39,7 +44,7 @@ ul{
     flex-shrink: 0;    
 }
 
-li{
+.navlinks li{
     display: flex;
     width: 60px;
     height: 33px;
@@ -62,11 +67,119 @@ li a:hover{
     text-decoration: underline;
 }
 
+/*About Me*/
+
+#selfie{
+    width: 50%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size:50px;
+}
+
+.aboutme{
+    display:flex;
+    flex-direction: row;
+    gap: 54px;
+    padding: 25px 100px;
+}
+
+/*My UX/UI Skills*/
+
+#skills{
+    text-align: center;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.Skills{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "research empathy interviews tools"
+    "testing ia wireframe coding"
+}
+
+#research{
+    grid-area: "research";
+}
+
+#empathy{
+    grid-area: "empathy";
+}
+
+#interviews{
+    grid-area: "interviews";
+}
+
+#tools{
+    grid-area: "tools";
+}
+
+#testing{
+    grid-area: "testing";
+}
+
+#ia{
+    grid-area: "ia";
+}
+
+#wireframe{
+    grid-area: "wireframe";
+}
+
+#coding{
+    grid-area: "coding";
+}
+
+.askill{
+    margin: 10px;
+}
+
+.uxskills{
+    padding: 0px 100px;
+}
+
+.uxskills p{
+    font-size: 18px;
+}
+
+.tools li{
+    font-family: "DM sans", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+
+/*What I Do When I'm Not Working*/
+
+.notworking{
+    display:flex;
+    flex-direction: row;
+    padding: 0px 100px;
+    padding-bottom: 50px;
+}
+
+figcaption{
+    font-size: 20px;
+    font-family: 'DM sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /*Footer*/
 
 footer{
     width: 100%;
-    height: 250px;  
+    height: 250px;
+    border-top: 1px solid black;  
 }
 
 .footer{
@@ -78,7 +191,8 @@ footer{
 }
 
 .inline-block2{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 
 .inline-block2 li:hover{
@@ -91,4 +205,13 @@ footer{
     gap: 897px;
     padding: 0px 75px;
     align-self: stretch;
+}
+
+hr{
+    width: 95%;
+}
+
+.logo2 a{
+    color:black;
+    text-decoration: none;
 }
