@@ -122,6 +122,7 @@ li a:hover{
 
 #ppc:hover{
     background-image: url("../images/PPC\ case\ study\ hover.png");
+    cursor:pointer;
 }
 
 #fcc{
@@ -132,6 +133,7 @@ li a:hover{
 
 #fcc:hover{
     background-image: url("../images/FCC\ case\ study\ hover.png");
+    cursor: pointer;
 }
 
 #ff{
@@ -141,6 +143,7 @@ li a:hover{
 
 #ff:hover{
     background-image: url("../images/FF\ case\ study\ hover.png");
+    cursor: pointer;
 }
 
 .projectcontent{
